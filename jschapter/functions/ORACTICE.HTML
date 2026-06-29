@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>cricket match game</h1>
+    
+    <button onclick="
+    let userChoice='you have choosen bat'; let randomNumber=Math.random()*3; 
+    let computerChoice;
+
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice='bat';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+        computerChoice='ball';
+    } else{
+        computerChoice='stump';
+    }
+    console.log(computerChoice);
+   //computerChoiceMsg=`computerChoice is $(computerChoice)`;
+    let result;
+    if(computerChoice==='bat'){
+        result='user won ';
+    }
+    else if(computerChoice==='ball'){
+        result='computer won wohooo';
+    }
+    else if(computerChoice==='stump') {
+         result='its a tie'
+    }
+    console.log(result);
+    alert(`you have choose bat and cmputer choice is ${computerChoice} and the final result is ${result}`)">bat</button>
+    <button onclick="
+     userChoice='bat';
+      randomNumber=Math.random()*3;
+       //let computerChoice;
+      if(randomNumber>0 && randomNumber<=1){
+      computerChoice='bat';}
+      else if(randomNumber>1 && randomNumber<=2){
+        computerChoice='ball';
+      }
+      else{
+        computerChoice='stump';
+      }
+     // let result;
+      if(computerChoice==='ball'){
+        result = 'user won';
+      }
+      else if(computerChoice==='bat'){
+        result= 'computer won wohooooo';
+    
+      }
+      else {
+        result='its a tie babyyy'
+      }
+      alert(`computer choice is ${computerChoice} and the final result is ${result}`);">ball</button>
+      <script>
+        
+      </script>
+
+
+    
+</body>
+</html>
